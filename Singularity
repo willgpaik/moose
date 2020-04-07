@@ -51,6 +51,8 @@ From: willgpaik/centos7_aci
     export CXX=mpicxx
     export LIBMESH_DIR=/opt/sw/libmesh
 
+    export MOOSE_JOBS=2
+    
     cd /opt/sw
     git clone https://github.com/idaholab/moose.git
     cd moose
