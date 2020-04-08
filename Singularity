@@ -6,7 +6,7 @@ From: willgpaik/centos7_aci
 
     export PETSC_DIR=/opt/sw/petsc
     export LIBMESH_DIR=/opt/sw/libmesh
-    PATH="/usr/local/bin/:$PATH:/usr/lib64/openmpi/bin/:/opt/sw/libmesh/bin"
+    PATH="/usr/local/bin/:$PATH:/usr/lib64/openmpi/bin/:/opt/sw/libmesh/bin:/opt/sw/moose/python/peacock"
     LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/lib64/openmpi/lib/:/opt/sw/petsc/lib:/opt/sw/libmesh/lib"
     CPATH=$CPATH:/opt/sw/petsc/include:/opt/sw/libmesh/include
     MPI_ROOT=/usr/lib64/openmpi/
@@ -72,5 +72,4 @@ From: willgpaik/centos7_aci
     # Make symbolic link for invoking Python
     ln -sf /usr/bin/python3 /usr/bin/python
 
-    cd /opt/sw
-    rm -rf moose
+    pip3 install PyQt5
