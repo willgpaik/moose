@@ -11,3 +11,4 @@ $ cd moose/test
 $ make
 $ ./run_tests
 ```
+It cannot be built through Singularity Hub (>2 hr build time)
